@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  entry: "./src/game.ts",
+  entry: "./src/Game.ts",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",

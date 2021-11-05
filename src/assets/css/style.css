@@ -9,3 +9,7 @@ body {
   align-items: center;
   font-family: "Gochi Hand";
 }
+
+canvas {
+  border-radius: 6px;
+}

@@ -8,7 +8,7 @@ export class MainScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image("logo", "../../assets/logo.png");
+    this.load.image("logo", "../../assets/images/logo.png");
   }
 
   create(): void {

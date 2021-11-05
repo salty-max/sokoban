@@ -27,6 +27,14 @@ module.exports = {
         loader: "ts-loader",
       },
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+      },
+      {
         test: require.resolve("Phaser"),
         loader: "expose-loader",
         options: { exposes: { globalName: "Phaser", override: true } },

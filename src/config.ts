@@ -4,9 +4,8 @@ import { MainScene } from "./scenes/MainScene";
 export const GameConfig: Phaser.Types.Core.GameConfig = {
   title: "Phaser TS Boilerplate",
   version: "1.0",
-  width: 256,
-  height: 256,
-  zoom: 2,
+  width: 512,
+  height: 512,
   backgroundColor: 0x3a404d,
   type: Phaser.AUTO,
   input: {
@@ -16,7 +15,7 @@ export const GameConfig: Phaser.Types.Core.GameConfig = {
     touch: false,
   },
   render: {
-    pixelArt: true,
+    pixelArt: false,
     antialias: false,
     antialiasGL: false,
   },

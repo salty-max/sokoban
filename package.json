@@ -47,6 +47,7 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "json-loader": "^0.5.7",
+    "lint-staged": "^11.2.6",
     "mini-css-extract-plugin": "^2.4.3",
     "postcss-loader": "^6.2.0",
     "prettier": "^2.4.1",
@@ -61,5 +62,13 @@
   },
   "dependencies": {
     "phaser": "^3.55.2"
+  },
+  "lint-staged": {
+    "*.(js|html|css)": [
+      "prettier --write"
+    ],
+    "*.(js|ts)": [
+      "eslint --fix"
+    ]
   }
 }
